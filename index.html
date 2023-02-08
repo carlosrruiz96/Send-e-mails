@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envio de Emails</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="spinner.css">
+</head>
+<body>
+    
+    <form id="form">
+        <h1 class="form-title">Enviar mails</h1>
+        <div class=form-container>
+            <div class="form-group">
+                <input type="email" name = "email" id="email" class="form-input" placeholder="Email Destino, ej: mkt@empresa.com" required>
+                <label for="email" class="form-label">Email:</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form-group">
+              <input type="email" name = "cc" id="cc" class="form-input" placeholder="Email Destino, ej: mkt@empresa.com">
+              <label for="email" class="form-label">CC (Opcional):</label>
+              <span class="form_line"></span>
+          </div>
+
+            <div class="form-group">
+                <input type="text" name = "asunto" id="asunto" class="form-input" placeholder="Asunto Email" required>
+                <label for="asunto" class="form-label" >Asunto:</label>
+                <span class="form_line"></span>
+            </div>
+
+            <div class="form-group">
+                <textarea name="mensaje" id="mensaje" rows="5" placeholder="Mensaje de Email" class="form-input" required></textarea>
+                <label for="mensaje" class="form-label">Mensaje:</label>
+            </div>
+
+            <div id="botones">
+              <button type="submit" class="btn">
+                Send
+              </button>
+                
+              <button type="reset" class="btn">
+                Reset
+              </button>
+            </div>
+            
+            
+            
+          </form>
+        <div id="spinner" class="spin" >
+            <div class="sk-chase">
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              </div>
+          </div>
+
+              
+    
+            
+            
+
+    <script src="index.js"></script>
+</body>
+</html>

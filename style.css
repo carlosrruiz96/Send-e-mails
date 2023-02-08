@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: sans-serif;
+    background-color: rgb(38,32,149);
+    background: linear-gradient(90deg, rgba(38,32,149,0.7008053221288515) 0%, rgba(63,63,175,0.8044467787114846) 46%, rgba(0,212,255,1) 78%);
+    min-height: 100vh;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+
+#form{
+    background-color: #fff;
+    margin: auto;
+    height: auto;
+    width: 90%;
+    max-width: 750px;
+    min-width: 300px;
+    padding: 2em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 10px rgb(0 0 0 / 10%);
+    text-align: center;
+}
+
+.form-group{
+    position: relative;
+}
+
+.form-title{
+    font-size: 1.7rem;
+    margin-bottom: .5em;
+}
+
+
+.form-container{
+    margin-top: 2em;
+    display: grid;
+    gap: 2.5em;
+}
+
+
+.form-input{
+    width: 100%;
+    font-size: 1rem;
+    padding: .3em 0;
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);  
+}
+
+::placeholder { color: rgb(170, 155, 155); }
+
+.form-label{
+    position: absolute;
+    cursor: pointer;
+    top: -25px;
+    left: 1px;
+}
+
+#mensaje{
+    font-family: 'Roboto', sans-serif;
+    padding: .3em 0;
+    border-color: rgb(170, 155, 155);
+    
+}
+  
+  .opacity{
+    opacity: .5;
+  }
+
+  .btn {
+    margin: 20px 10px 0 10px;
+    padding: 0.5em 2em 0.5em 2.5em;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 15px;
+    color: #000000;
+    letter-spacing: 0.3em;
+    text-shadow: -2px 2px 5px #FD3084;
+    background-color: transparent;
+    border: 2px solid #8439cf;
+    box-shadow: 0 0 0px 1px #7040df,
+      0 0 10px 2px #000000,
+      inset 0 0 0px 1px #775bce,
+      inset 0 0 10px 2px #f7f7f7;
+    transition: 100ms;
+  }
+  
+  .btn:hover {
+    box-shadow: 0 0 0px 1px #FFF,
+      0 0 10px 2px #2942e4,
+      inset 0 0 0px 1px #FFF,
+      inset 0 0 30px 2px #FFF;
+    text-shadow: 0 0 10px #FFF;
+    transform: translateY(-5px);
+  }
+  
+  .btn:active {
+    box-shadow: 0 0 0px 1px #1221f1,
+      0 0 25px 2px #6030fd,
+      inset 0 0 0px 1px #4212f1,
+      inset 0 0 30px 2px #5930fd;
+    transform: translateY(1px);
+  }
+
+
+.alerta-roja{
+  background-color: red;
+  text-align: center;
+  color: white;
+  margin: 8px;
+  padding: 6px;
+  border-radius: 10px;
+}
+
+.msj-enviado{
+  background-color: green;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin: 0px;
+  padding: 6px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  
+}
+
+
+.spin{
+  visibility: hidden;
+}
